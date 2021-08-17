@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Wasp Dekorasyon</title>
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">Wasp</a>
+            <div class="toggle" onclick="toggle();"></div>
+        </header>
+        <div class="content">
+            <div class="contentBx">
+                <h2>Wasp Dekorasyon<br>Hizmetinizde</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula nunc imperdiet mollis lacinia. Duis ac elit placerat, lobortis nisi id, ultrices mi. Pellentesque aliquet sapien at metus feugiat dapibus. Praesent consequat quam lacus, eget lacinia metus blandit non. Aenean et ligula sit amet nunc mattis vestibulum ac in leo. Suspendisse aliquet fringilla cursus. Nulla aliquet at urna a laoreet.</p>
+                <a href="#">MAĞAZA</a>
+                </div>
+                <div class="imgBx">
+                <img src="{% static 'img/sehpa.png' %}">
+                </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="{% static 'img/facebook.png' %}"></a></li>
+            <li><a herf="#"><img src="{% static 'img/twitter.png'%}"></a></li>
+            <li><a href="#"><img src="{% static 'img/instagram.png'%}"></a></li>
+
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Hakkımızda</a></li>
+            <li><a href="#">Ürünler</a></li>
+            <li><a href="#">Mağaza</a></li>
+            <li><a href="#">İletişim</a></li>
+
+
+    </section>
+    <script type="text/javascript">
+        function toggle(){
+            const toggle = document.querySelector(".toggle");
+            const banner = document.querySelector(".banner");
+            toggle.classList.toggle('active')
+            banner.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
